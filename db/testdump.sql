@@ -1,3 +1,5 @@
+CREATE DATABASE student;
+use student;
 CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_name VARCHAR(100) NOT NULL,
     student_addr VARCHAR(100) NOT NULL,
