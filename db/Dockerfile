@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-RUN apt-get update && apt-get install -y mysql-client
+RUN apt-get update -y && apt-get install -y mysql-client
 
 FROM mysql:5.7
 
