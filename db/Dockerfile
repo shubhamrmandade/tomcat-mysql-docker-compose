@@ -11,6 +11,6 @@ ENV MYSQL_DATABASE=student \
     MYSQL_PASSWORD=admin123 \
     MYSQL_RANDOM_ROOT_PASSWORD=yes
 
-RUN mysql -h database-2.cbqg2cmmyt06.ap-south-1.rds.amazonaws.com -u admin -padmin123 -e "USE student;"
+RUN mysql -h database-1.cj42mnnfhyfn.us-east-2.rds.amazonaws.com -u admin -padmin123 -e "USE student;"
 
 EXPOSE 3306
