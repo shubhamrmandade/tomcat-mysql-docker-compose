@@ -2,9 +2,9 @@ FROM ubuntu:latest
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get  install openjdk-11-jre-headless  wget -y
 RUN mkdir /usr/local/tomcat
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz -O /tmp/tomcat.tar.gz
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
-RUN cp -Rv /tmp/apache-tomcat-9.0.71/* /usr/local/tomcat/
+RUN cp -Rv /tmp/apache-tomcat-8.5.85/* /usr/local/tomcat/
 RUN ls /usr/local/tomcat/
 RUN wget https://studentsapp-bucket-01.s3.amazonaws.com/student.war
 ADD https://studentsapp-bucket-01.s3.amazonaws.com/mysql-connector.jar /usr/local/tomcat/lib
